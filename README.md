@@ -167,3 +167,6 @@ Creating a python app using Docker containers :
    * Get a list of the containers running by running the command docker ps
    * Run docker container stop [container id] for each container in the list that is running
    * Remove the stopped containers by running docker system prune
+
+Note : Main python code and Dockerfile codes are attached to this repo.
+       Here is the docker image link to vies : https://hub.docker.com/r/sanathkumar0939/hello-sanath
