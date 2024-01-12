@@ -169,4 +169,4 @@ Creating a python app using Docker containers :
    * Remove the stopped containers by running docker system prune
 
 Note : Main python code and Dockerfile codes are attached to this repo.
-       Here is the docker image link to vies : https://hub.docker.com/r/sanathkumar0939/hello-sanath
+       Here is the docker image link to view : https://hub.docker.com/r/sanathkumar0939/hello-sanath
