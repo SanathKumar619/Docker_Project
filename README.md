@@ -90,15 +90,15 @@ Creating a python app using Docker containers :
 3. Run the Docker image
    * Now that you have built the image, you can run it to see that it works.
 
-    Run the Docker image:
+     Run the Docker image:
 
-    $ docker run -p 5001:5000 -d sanath-world
-    0b2ba61df37fb4038d9ae5d145740c63c2c211ae2729fc27dc01b82b5aaafa26
-    The -p flag maps a port running inside the container to your host. In this case, you're mapping the Python app running on port 5000 inside the container to port 5001 on your host. Note that if port 5001 is already being used by          another application on your host, you might need to replace 5001 with another value, such as 5002.
+     $ docker run -p 5001:5000 -d sanath-world
+     0b2ba61df37fb4038d9ae5d145740c63c2c211ae2729fc27dc01b82b5aaafa26
+     The -p flag maps a port running inside the container to your host. In this case, you're mapping the Python app running on port 5000 inside the container to port 5001 on your host. Note that if port 5001 is already being used by          another application on your host, you might need to replace 5001 with another value, such as 5002.
 
-    Navigate to http://localhost:5001 in a browser to see the results.
+     Navigate to http://localhost:5001 in a browser to see the results.
 
-    You should see "hello world from Sanath Kumar!" in your browser.
+     You should see "hello world from Sanath Kumar!" in your browser.
    
    * Check the log output of the container.
 
