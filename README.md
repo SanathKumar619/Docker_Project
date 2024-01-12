@@ -3,35 +3,35 @@ Creating a python app using Docker containers :
 
 1. Create a Python app (without using Docker)
 
-* Copy and paste this entire command into the terminal. The result of running this command will create a file named app.py.
+  * Copy and paste this entire command into the terminal. The result of running this command will create a file named app.py.
 
-  echo 'from flask import Flask
+    echo 'from flask import Flask
 
-  app = Flask(__name__)
+    app = Flask(__name__)
 
-  @app.route("/")
-  def hello():
-      return "hello world!"
+    @app.route("/")
+    def hello():
+        return "hello world!"
 
-  if __name__ == "__main__":
-      app.run(host="0.0.0.0")' > app.py
+    if __name__ == "__main__":
+        app.run(host="0.0.0.0")' > app.py
   
-  This is a simple Python app that uses Flask to expose an HTTP web server on port 5000. (5000 is the default port for flask.) Don't worry if you are not too familiar with Python or Flask. These concepts can be applied to an application   written in any language.
+    This is a simple Python app that uses Flask to expose an HTTP web server on port 5000. (5000 is the default port for flask.) Don't worry if you are not too familiar with Python or Flask. These concepts can be applied to an               application written in any language.
 
-* Optional: If you have Python and pip installed, run this app locally. If not, download the requirements by running following commands..
-  $ python3 --version
-  Python 3.6.1
-  $ pip3 --version
-  pip 9.0.1 from /usr/local/lib/python3.6/site-packages (python 3.6)
-  $ pip3 install flask
-  $ python3 app.py
+  * Optional: If you have Python and pip installed, run this app locally. If not, download the requirements by running following commands..
+    $ python3 --version
+    Python 3.6.1
+    $ pip3 --version
+    pip 9.0.1 from /usr/local/lib/python3.6/site-packages (python 3.6)
+    $ pip3 install flask
+    $ python3 app.py
   
-* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-  Then just visit that link to make sure that your app is running.
+  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+    Then just visit that link to make sure that your app is running.
 
 2. Create and build the Docker image.
 
-   If you don't have Python installed locally, don't worry because you don't need it. One of the advantages of using Docker containers is that you can build Python into your containers without having Python installed on your host.
+     If you don't have Python installed locally, don't worry because you don't need it. One of the advantages of using Docker containers is that you can build Python into your containers without having Python installed on your host.
 
    * Create a file named Dockerfile using the touch command. This will create an empty Dockerfile. A Dockerfile is basically a text document that contains all the commands a user could call on the command line to assemble an image.
 
